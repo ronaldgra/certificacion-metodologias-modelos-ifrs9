@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramienta de Certificación de Modelos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginPanel">
+        <h2>Ingresar</h2>
+        <label for="username">Usuario de red:</label>
+        <input id="username"><br>
+        <label for="name">Nombre:</label>
+        <input id="name"><br>
+        <label for="roleSelect">Seleccione rol:</label>
+        <select id="roleSelect">
+            <option value="Analista">Analista</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Gerente">Gerente</option>
+            <option value="VP">VP</option>
+        </select>
+        <button onclick="login()">Entrar</button>
+    </div>
+
+    <div id="mainPanel" class="hidden">
+        <h2>Tablero de Certificación de Modelos</h2>
+        <div id="userRole"></div>
+        <button onclick="logout()">Salir</button>
+        <hr>
+        <div id="requestForm" class="hidden"></div>
+        <div id="detailPanel" class="hidden"></div>
+        <div id="dashboard"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
