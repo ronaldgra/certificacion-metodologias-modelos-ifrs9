@@ -41,7 +41,10 @@ function logout() {
     currentRole = null;
     document.getElementById('mainPanel').classList.add('hidden');
     document.getElementById('loginPanel').classList.remove('hidden');
-    document.getElementById('requestForm').innerHTML = '';
+    const form = document.getElementById('requestForm');
+    form.innerHTML = '';
+    form.classList.add('hidden');
+    document.getElementById('detailPanel').classList.add('hidden');
 }
 
 function showRequestForm() {
