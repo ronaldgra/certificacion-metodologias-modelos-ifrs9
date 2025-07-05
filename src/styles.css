@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+.hidden { display: none; }
+#dashboard table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+#dashboard th, #dashboard td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+#dashboard th { background: #f2f2f2; }
+.request-actions button { margin-right: 5px; }
+#detailPanel { border: 1px solid #ccc; padding: 10px; margin-top: 10px; background: #fafafa; }
